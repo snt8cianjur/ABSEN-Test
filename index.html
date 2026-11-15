@@ -130,7 +130,7 @@
 window.onerror = (m) => { toast('Error: '+m, 6000); };
 window.onunhandledrejection = (ev) => { toast('Error: '+((ev.reason&&ev.reason.message)||ev.reason), 6000); };
 /* ====== ISI URL WEB APP APPS SCRIPT ANDA (berakhiran /exec) ====== */
-let API_URL = 'TEMPEL_URL_EXEC_DI_SINI';
+let API_URL = 'https://script.google.com/macros/s/AKfycbzL2jizNnlKLJ30wg72WG6vr0YkAbVMz7xz-unFbXyMfhInhFUStcuaIfj2YVcTzQX7hg/exec';
 /* ================================================================== */
 try { if(location.search.includes('reset')) localStorage.removeItem('apiUrl'); } catch(e){}
 try { if(!/^https:/.test(API_URL)) API_URL = localStorage.getItem('apiUrl') || API_URL; } catch(e){}
